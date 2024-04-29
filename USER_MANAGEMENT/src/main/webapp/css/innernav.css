@@ -1,0 +1,49 @@
+@charset "UTF-8";
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #nav{
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+        display: flex;
+    }
+    #name{
+        padding: 1%;
+    }
+    .content{
+        margin-left: 70%;
+        position: relative;
+        width: 20%;
+        display: flex;
+        justify-content: right;
+    }
+
+    #profile{
+        margin-top: 1.5%;
+        margin-right: 100px;
+        width: 35%;
+        height: 80%;
+        background-color: black;
+        border-radius: 80%;
+    }
+    .logout{
+        padding: 4%;
+        margin-right: 50%;
+        position: absolute;
+    }
+
+    #info{
+        position: absolute;
+        background-color: black;
+        height: 400%;
+        width: 100%;
+        top: 50px;
+        visibility: hidden;
+    }
+    #profile:hover~#info{
+        visibility: visible;
+        display: block;
+    }
